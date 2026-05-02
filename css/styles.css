@@ -192,6 +192,15 @@ p { margin: 0 0 1em; }
   text-decoration: none;
   color: var(--color-charcoal);
 }
+.nav-logo-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: contain;
+  background: var(--color-cream);
+  border: 2px solid var(--color-bacon-red);
+  flex-shrink: 0;
+}
 .nav-logo-mark {
   width: 56px;
   height: 56px;

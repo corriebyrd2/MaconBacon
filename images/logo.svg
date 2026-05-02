@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Macon Bacon">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#faf6ef"/>
+      <stop offset="100%" stop-color="#e8dec8"/>
+    </radialGradient>
+    <linearGradient id="bacon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b73347"/>
+      <stop offset="100%" stop-color="#8b1d2c"/>
+    </linearGradient>
+    <linearGradient id="strip" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e8dec8"/>
+      <stop offset="50%" stop-color="#faf6ef"/>
+      <stop offset="100%" stop-color="#e8dec8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="96" fill="url(#bg)" stroke="#8b1d2c" stroke-width="4"/>
+
+  <!-- Top arch: MACON -->
+  <path id="topArc" d="M 30 90 A 70 70 0 0 1 170 90" fill="none"/>
+  <text font-family="'Bebas Neue', Impact, Arial Narrow, sans-serif" font-size="22" letter-spacing="6" fill="#8b1d2c" font-weight="700">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">MACON</textPath>
+  </text>
+
+  <!-- Bacon strip body -->
+  <g transform="translate(100,108) rotate(-18)">
+    <path d="M -42 -22 Q -30 -32 -10 -28 Q 10 -24 28 -32 Q 44 -38 50 -22 L 48 -8 Q 38 -2 22 -6 Q 4 -10 -14 -4 Q -32 2 -44 -6 Z"
+          fill="url(#bacon)"/>
+    <path d="M -40 -18 Q -28 -26 -10 -22 Q 8 -18 26 -26 Q 40 -32 46 -18 L 44 -10 Q 36 -6 22 -10 Q 6 -14 -12 -8 Q -30 -2 -42 -8 Z"
+          fill="url(#strip)" opacity="0.7"/>
+    <path d="M -38 -14 Q -26 -20 -10 -16 Q 6 -12 24 -20 Q 36 -24 42 -14"
+          fill="none" stroke="#8b1d2c" stroke-width="1.5" opacity="0.4"/>
+  </g>
+
+  <!-- Baseball bat -->
+  <g transform="translate(100,108) rotate(-18)">
+    <line x1="-50" y1="-50" x2="58" y2="6" stroke="#5e1220" stroke-width="6" stroke-linecap="round"/>
+    <line x1="-50" y1="-50" x2="58" y2="6" stroke="#b78a4a" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+    <circle cx="-50" cy="-50" r="5" fill="#5e1220"/>
+  </g>
+
+  <!-- Eye on the bacon -->
+  <circle cx="74" cy="100" r="4" fill="#1d1d1d"/>
+  <circle cx="74" cy="98" r="1.2" fill="#fff"/>
+
+  <!-- Bottom: BACON script -->
+  <text x="100" y="170" text-anchor="middle"
+        font-family="'Bebas Neue', Impact, Arial Narrow, sans-serif"
+        font-size="36" letter-spacing="2" font-weight="700"
+        fill="#8b1d2c" font-style="italic">BACON</text>
+  <text x="100" y="170" text-anchor="middle"
+        font-family="'Bebas Neue', Impact, Arial Narrow, sans-serif"
+        font-size="36" letter-spacing="2" font-weight="700"
+        fill="none" stroke="#5e1220" stroke-width="0.5" font-style="italic">BACON</text>
+</svg>
