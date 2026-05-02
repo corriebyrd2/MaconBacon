@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pork Shop &mdash; Macon Bacon Baseball</title>
+  <meta name="description" content="Official Macon Bacon merchandise. Jerseys, hats, tees, and accessories." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-promo">★ Free Shipping on Orders $75+ &middot; Use code: SIZZLE</div>
+      <div class="top-bar-links">
+        <a href="tickets.html">Buy Tickets</a>
+        <a href="contact.html">Group Sales</a>
+        <a href="#">My Account</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="nav-logo" href="index.html">
+        <div class="nav-logo-mark">MB</div>
+        <div class="nav-logo-text"><strong>Macon Bacon</strong><span>Coastal Plain League</span></div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tickets.html">Tickets</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="sponsors.html">Partners</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn btn-ghost btn-sm" style="border: 1px solid var(--color-line);">🛒 Cart (<span data-cart-count>0</span>)</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumbs"><a href="index.html">Home</a> &rsaquo; <span>Pork Shop</span></div>
+      <h1>The Pork Shop</h1>
+      <p>Official Macon Bacon gear, hand-picked and ready to ship. Wear the sizzle &mdash; everyone will know you're a fan.</p>
+    </div>
+  </section>
+
+  <!-- Featured collection -->
+  <section class="section">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 20px; margin-bottom: 56px;">
+        <a href="#" style="text-decoration: none; color: inherit; aspect-ratio: 16 / 9; background: linear-gradient(135deg, var(--color-bacon-red) 0%, var(--color-bacon-red-dark) 100%); border-radius: var(--radius-lg); padding: 36px; display: flex; flex-direction: column; justify-content: flex-end; color: white; position: relative; overflow: hidden;">
+          <div style="position: absolute; top: 24px; right: 24px; font-size: 6rem; opacity: 0.15;">🥓</div>
+          <span class="card-tag" style="background: var(--color-sizzle); color: var(--color-charcoal); align-self: flex-start;">New Drop</span>
+          <h3 style="color: white; margin: 12px 0 6px; font-size: 1.8rem;">2026 Authentic Collection</h3>
+          <p style="margin: 0; opacity: 0.9;">Game-worn replica jerseys and the new Sunday Sizzle alternates.</p>
+        </a>
+        <a href="#" style="text-decoration: none; color: inherit; aspect-ratio: 1; background: linear-gradient(135deg, var(--color-sizzle), #c97a0a); border-radius: var(--radius-lg); padding: 28px; display: flex; flex-direction: column; justify-content: flex-end; color: var(--color-charcoal); position: relative; overflow: hidden;">
+          <div style="position: absolute; top: 16px; right: 16px; font-size: 4rem; opacity: 0.2;">🧢</div>
+          <h3 style="color: var(--color-charcoal); margin: 0 0 4px;">Headwear</h3>
+          <p style="margin: 0; font-size: 0.9rem;">Caps &amp; snapbacks</p>
+        </a>
+        <a href="#" style="text-decoration: none; color: inherit; aspect-ratio: 1; background: linear-gradient(135deg, #2a2a2a, #0f0f0f); border-radius: var(--radius-lg); padding: 28px; display: flex; flex-direction: column; justify-content: flex-end; color: var(--color-sizzle); position: relative; overflow: hidden;">
+          <div style="position: absolute; top: 16px; right: 16px; font-size: 4rem; opacity: 0.3;">👕</div>
+          <h3 style="color: var(--color-sizzle); margin: 0 0 4px;">Tees &amp; Hoodies</h3>
+          <p style="margin: 0; font-size: 0.9rem; color: rgba(255,255,255,0.8);">Everyday gear</p>
+        </a>
+      </div>
+
+      <!-- Filter -->
+      <div class="filter-bar" data-shop-filter>
+        <span class="filter-label">CATEGORY:</span>
+        <button class="filter-pill is-active" data-cat="all">All</button>
+        <button class="filter-pill" data-cat="jerseys">Jerseys</button>
+        <button class="filter-pill" data-cat="hats">Hats</button>
+        <button class="filter-pill" data-cat="tees">Tees</button>
+        <button class="filter-pill" data-cat="accessories">Accessories</button>
+        <button class="filter-pill" data-cat="kids">Kids</button>
+        <div style="margin-left: auto; display: flex; gap: 10px; align-items: center;">
+          <span class="filter-label">SORT:</span>
+          <select style="padding: 8px 12px; border-radius: var(--radius-pill); border: 1px solid var(--color-line); font-size: 0.85rem; font-weight: 600;">
+            <option>Featured</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Newest</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Shop grid -->
+      <div class="shop-grid">
+        <div class="product" data-category="jerseys">
+          <div class="product-img bg-jersey"><span class="product-badge">New</span>🥓</div>
+          <div class="product-body">
+            <div class="product-cat">Jerseys</div>
+            <div class="product-name">2026 Authentic Home Jersey</div>
+            <div class="product-price">$129.99</div>
+          </div>
+          <div class="product-actions">
+            <button class="btn btn-primary btn-sm btn-block" data-add-to-cart data-product="2026 Home Jersey">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product" data-category="jerseys">
+          <div class="product-img bg-bacon">🏟️</div>
+          <div class="product-body">
+            <div class="product-cat">Jerseys</div>
+            <div class="product-name">2026 Authentic Road Jersey</div>
+            <div class="product-price">$129.99</div>
+          </div>
+          <div class="product-actions">
+            <button class="btn btn-primary btn-sm btn-block" data-add-to-cart data-product="2026 Road Jersey">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product" data-category="jerseys">
+          <div class="product-img bg-tee"><span class="product-badge">Limited</span>⚾</div>
+          <div class="product-body">
+            <div class="product-cat">Jerseys</div>
+            <div class="product-name">Sunday Sizzle Alternate</div>
+            <div class="product-price">$139.99</div>
+          </div>
+          <div class="product-actions">
+            <button class="btn btn-primary btn-sm btn-block" data-add-to-cart data-product="Sunday Sizzle Alternate">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product" data-category="jerseys">
+          <div class="product-img bg-jersey">🌟</div>
+          <div class="product-body">
+            <div class="product-cat">Jerseys</div>
+            <div class="product-name">Replica Pullover (#9 Henderson)</div>
+            <div class="product-price">$74.99</div>
+          </div>
+          <div class="product-actions">
+            <button class="btn btn-primary btn-sm btn-block" data-add-to-cart data-product="Henderson Replica">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product" data-category="hats">
+          <div class="product-img bg-hat"><span class="product-badge sale">-20%</span>🧢</div>
+          <div class="product-body">
+            <div class="product-cat">Headwear</div>
+            <div class="product-name">Pig Snout Snapback</div>
+            <div class="product-price">$27.99 <s>$34.99</s></div>
+          </div>
+          <div class="product-actions">
+            <button class="btn btn-primary btn-sm btn-block" data-add-to-cart data-product="Pig Snout Snapback">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product" data-category="hats">
+          <div class="product-img bg-hat">🎩</div>
+          <div class="product-body">
+            <div class="product-cat">Headwear</div>
+            <div class="product-name">Classic 5950 Fitted Cap</div>
+            <div class="product-price">$39.99</div>
+          </div>
+          <div class="product-actions">
+            <button class="btn btn-primary btn-sm btn-block" data-add-to-cart data-product="5950 Fitted Cap">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product" data-category="hats">
+          <div class="product-img bg-hat">☀️</div>
+          <div class="product-body">
+            <div class="product-cat">Headwear</div>
+            <div class="product-name">Bacon Strip Bucket Hat</div>
+            <div class="product-price">$32.99</div>
+          </div>
+          <div class="product-actions">
+            <button class="btn btn-primary btn-sm btn-block" data-add-to-cart data-product="Bucket Hat">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product" data-category="hats">
+          <div class="product-img bg-acc">🎨</div>
+          <div class="product-body">
+            <div class="product-cat">Headwear</div>
+            <div class="product-name">Sizzle Gold Trucker</div>
+            <div class="product-price">$28.99</div>
+          </div>
+          <div class="product-actions">
+            <button class="btn btn-primary btn-sm btn-block" data-add-to-cart data-product="Sizzle Trucker">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product" data-category="tees">
+          <div class="product-img bg-tee"><span class="product-badge">Bestseller</span>👕</div>
+          <div class="product-body">
+            <div class="product-cat">Tees</div>
+            <div class="product-name">"Kevin Bacon" Fan Tee</div>
+            <div class="product-price">$24.99</div>
+          </div>
+          <div class="product-actions">
+            <button class="btn btn-primary btn-sm btn-block" data-add-to-cart data-product="Kevin Bacon Tee">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product" data-category="tees">
+          <div class="product-img bg-bacon">🔥</div>
+          <div class="product-body">
+            <div class="product-cat">Tees</div>
+            <div class="product-name">"Best of the Wurst" Tee</div>
+            <div class="product-price">$22.99</div>
+          </div>
+          <div class="product-actions">
+            <button class="btn btn-primary btn-sm btn-block" data-add-to-cart data-product="Best of the Wurst Tee">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product" data-category="tees">
+          <div class="product-img bg-hat">🧥</div>
+          <div class="product-body">
+            <div class="product-cat">Outerwear</div>
+            <div class="product-name">Bacon Heavyweight Hoodie</div>
+            <div class="product-price">$54.99</div>
+          </div>
+          <div class="product-actions">
+            <button class="btn btn-primary btn-sm btn-block" data-add-to-cart data-product="Heavyweight Hoodie">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product" data-category="tees">
+          <div class="product-img bg-tee">🥨</div>
+          <div class="product-body">
+            <div class="product-cat">Tees</div>
+            <div class="product-name">Pork Pit Long Sleeve</div>
+            <div class="product-price">$32.99</div>
+          </div>
+          <div class="product-actions">
+            <button class="btn btn-primary btn-sm btn-block" data-add-to-cart data-product="Pork Pit LS">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product" data-category="accessories">
+          <div class="product-img bg-acc">🍳</div>
+          <div class="product-body">
+            <div class="product-cat">Accessories</div>
+            <div class="product-name">Bacon Strip Foam Finger</div>
+            <div class="product-price">$14.99</div>
+          </div>
+          <div class="product-actions">
+            <button class="btn btn-primary btn-sm btn-block" data-add-to-cart data-product="Foam Finger">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product" data-category="accessories">
+          <div class="product-img bg-acc">☕</div>
+          <div class="product-body">
+            <div class="product-cat">Accessories</div>
+            <div class="product-name">Sizzle Travel Mug (16oz)</div>
+            <div class="product-price">$19.99</div>
+          </div>
+          <div class="product-actions">
+            <button class="btn btn-primary btn-sm btn-block" data-add-to-cart data-product="Travel Mug">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product" data-category="accessories">
+          <div class="product-img bg-bacon"><span class="product-badge sale">-15%</span>⚾</div>
+          <div class="product-body">
+            <div class="product-cat">Accessories</div>
+            <div class="product-name">Autographed Game Ball</div>
+            <div class="product-price">$33.99 <s>$39.99</s></div>
+          </div>
+          <div class="product-actions">
+            <button class="btn btn-primary btn-sm btn-block" data-add-to-cart data-product="Autographed Game Ball">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product" data-category="kids">
+          <div class="product-img bg-tee"><span class="product-badge">Kids</span>👶</div>
+          <div class="product-body">
+            <div class="product-cat">Kids</div>
+            <div class="product-name">Lil' Sizzle Toddler Jersey</div>
+            <div class="product-price">$34.99</div>
+          </div>
+          <div class="product-actions">
+            <button class="btn btn-primary btn-sm btn-block" data-add-to-cart data-product="Toddler Jersey">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why shop with us -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="grid grid-3">
+        <div>
+          <div style="font-size: 2rem; margin-bottom: 12px;">🚚</div>
+          <h3 style="color: var(--color-white);">Free Shipping $75+</h3>
+          <p style="color: rgba(255,255,255,0.75);">Domestic orders over $75 ship free. Order before 2 PM ET for same-day processing.</p>
+        </div>
+        <div>
+          <div style="font-size: 2rem; margin-bottom: 12px;">↩️</div>
+          <h3 style="color: var(--color-white);">Easy 30-Day Returns</h3>
+          <p style="color: rgba(255,255,255,0.75);">Not feeling the sizzle? Return any item within 30 days for a full refund &mdash; no questions asked.</p>
+        </div>
+        <div>
+          <div style="font-size: 2rem; margin-bottom: 12px;">🎁</div>
+          <h3 style="color: var(--color-white);">Gift Wrapping</h3>
+          <p style="color: rgba(255,255,255,0.75);">Add bacon-themed wrapping at checkout for $4.99. Includes a hand-signed card from Kevin Bacon (the mascot).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <strong>MACON BACON</strong>
+          <p>Coastal Plain League collegiate summer ball at historic Luther Williams Field. Best of the Wurst since 2018.</p>
+          <div class="socials">
+            <a class="social-btn" href="#">f</a><a class="social-btn" href="#">X</a><a class="social-btn" href="#">IG</a><a class="social-btn" href="#">TK</a><a class="social-btn" href="#">YT</a>
+          </div>
+        </div>
+        <div>
+          <h4>Fans</h4>
+          <ul class="footer-links">
+            <li><a href="tickets.html">Buy Tickets</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="team.html">Roster</a></li>
+            <li><a href="shop.html">Pork Shop</a></li>
+            <li><a href="#">Stadium A-Z Guide</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Business</h4>
+          <ul class="footer-links">
+            <li><a href="sponsors.html">Become a Partner</a></li>
+            <li><a href="contact.html">Group Outings</a></li>
+            <li><a href="contact.html">Stadium Rentals</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <p style="font-size: 0.9rem;">Get pre-sales and game day updates.</p>
+          <form class="newsletter" data-demo-form>
+            <input type="email" placeholder="Your email" required />
+            <button type="submit">Join</button>
+          </form>
+          <div class="form-success" style="margin-top: 10px;">Subscribed!</div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Macon Bacon Baseball Club. All rights reserved.</div>
+        <div><a href="#">Privacy</a> &middot; <a href="#">Terms</a> &middot; <a href="#">Accessibility</a> &middot; <a href="contact.html">Contact</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cart-toast" data-cart-toast>Cart updated</div>
+  <script src="js/main.js"></script>
+</body>
+</html>
